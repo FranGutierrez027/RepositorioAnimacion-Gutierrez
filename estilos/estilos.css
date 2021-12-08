@@ -1,0 +1,127 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+</style>
+
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+#header{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: rgb(0, 0, 0 , .9);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 100px;
+	color: white;
+
+}
+#header .logo:hover{
+	padding: 0 50px;
+	transform: rotate(45deg);
+	
+
+}
+#header	.nav{
+	flex-grow: 1;
+
+}
+#header	.nav ul{
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	font-size: 2rem;
+
+}
+#header	.nav ul li a{
+	background-color: black;
+
+}
+#header	.nav ul li a:hover{
+	background-color: red;
+	transform: 	scale(4.2);
+}
+#header .nav .active a{
+	color: #fff;
+
+}
+#header a{
+	color: #ccc;
+	text-decoration: none;
+}
+.bannerPrincipal {
+	height: 100vh;
+	background-image: url(../assets/tapia.jpg);
+	background-size: cover;
+	background-position: center;
+	display: grid;
+	grid-template-areas: 
+	"none img none"
+	"bio bio bio"
+	"bio bio bio";
+}
+.bannerPrincipal2 {
+	height: 100vh;
+	background-image: url(../assets/tapia.jpg);
+	background-size: cover;
+	background-position: center;
+	display: grid;
+	grid-template-areas: 
+	". . ."
+	"pala bolso zapas"
+	"indu indu indu";
+
+}
+
+.bannerPrincipal2 .pala{
+	grid-area: pala;
+	background-image: url(../assets/pala1.jpg);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.bannerPrincipal2 .bolso{
+	grid-area: bolso;
+	background-image: url(../assets/bolso1.jpg);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.bannerPrincipal2 .zapas{
+	grid-area: zapas;
+	background-image: url(../assets/zapatilla1.jpg);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.bannerPrincipal2 .indumentaria5{
+	display: grid;
+	grid-area: indu;
+	font-weight: 700;
+	color: #fff;
+	font-size: 1.5rem;
+	line-height: 3rem;
+	justify-items: center;
+	align-items: center;
+
+
+}
+.biografia{
+	grid-area: bio;
+	font-weight: 700;
+	color: #fff;
+	font-size: 1.5rem;
+	line-height: 3rem;
+}
+.img{
+	grid-area: img;
+	background-image: url(../assets/bolso1.jpg); 
+ }
